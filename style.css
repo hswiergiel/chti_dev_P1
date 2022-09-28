@@ -1,3 +1,74 @@
+:root {
+    --primaryColor: #FDBE00;
+    --secondaryColor: #DFE0DF;
+
+
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #303030;
+}
+
+h2 {
+
+
+    text-align: center;
+}
+
+
+.lawild {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: #303030 solid;
+
+
+
+}
+
+.logoentier {
+    padding: auto;
+    border: #303030 solid;
+
+}
+
+p {
+    max-width: 30vw;
+    text-align: left;
+
+}
+
+.textpres {}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: var(--primaryColor);
+}
+
+
+
+
+
+.bee {
+
+    opacity: 50%;
+
+}
+
+.adress {
+
+    text-align: end;
+    font-family: var(--textFont);
+
+
+}
+
 #grid {
     position: relative;
     width: 70%;
