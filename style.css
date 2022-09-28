@@ -8,12 +8,14 @@
 
 nav {
     background-color: var(--primaryColor);
+    display: block;
 }
 
 ul {
     text-align: center;
     list-style-type: none;
     color: var(--colorFont);
+    padding: 1em;
 }
 
 li {
@@ -21,10 +23,22 @@ li {
     margin: 2em;
 }
 
+a {
+    color: var(--colorFont);
+    border-radius: 5px;
+    padding: 0.2em;
+}
+
+a:hover {
+    background-color: #DFE0DF;
+}
+
 .banner {
     width: auto;
     background-color: var(--secondaryColor);
     margin-top: -1rem;
+    margin-bottom: 1rem;
+    padding: 1em;
 }
 
 .bannerPresentation {
@@ -34,6 +48,8 @@ li {
     color: var(--colorFont);
     /* max-width: 50vh; */
     margin: auto;
+    /* height: 5em; */
+    padding: 1em;
 }
 
 img {
