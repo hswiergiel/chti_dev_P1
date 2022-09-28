@@ -7,3 +7,61 @@
     --titleFont: Arial;
     --mainTitlefont: Arial;
 }
+
+@media screen and (max-width: 320px) {}
+
+body {
+    font-family: var(--textFont);
+    color: #303030;
+}
+
+h2 {
+    text-align: center;
+}
+
+.wildBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Presentation {
+    max-width: 70%;
+    margin-right: 5%;
+}
+
+.logo {
+    margin: auto;
+}
+
+.contactPresentation {
+    text-align: center;
+}
+
+.line {
+    margin: 2rem;
+    height: 1px;
+    background: black;
+}
+
+input,
+textarea {
+    display: block;
+    height: 1.5rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: #DFE0DF;
+    background-color: var(--secondaryColor);
+}
+
+textarea {
+    height: 5rem;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 15%;
+}
