@@ -21,22 +21,34 @@ h2 {
 
 .lawild {
 
-    display: flex
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: #303030 solid;
+
+
+
 }
 
-.logoentier {}
+.logoentier {
+    padding: auto;
+    border: #303030 solid;
 
-.textpres {
-
-
-    text-align: end
 }
+
+p {
+    max-width: 30vw;
+    text-align: left;
+
+}
+
+.textpres {}
 
 footer {
     display: flex;
     justify-content: space-around;
     height: 100px;
-    background-color: var(--primaryColor)
+    background-color: var(--primaryColor);
 }
 
 
