@@ -7,3 +7,5 @@
     --titleFont: Arial;
     --mainTitlefont: Arial;
 }
+
+@media screen and (max-width: 320px) {}
