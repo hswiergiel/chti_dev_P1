@@ -2,19 +2,70 @@
     --primaryColor: #FDBE00;
     --secondaryColor: #DFE0DF;
 
-
+    --textFontSize: 1rem;
+    --titleFontSize: 1.5rem;
+    --textFont: Arial;
+    --titleFont: Arial;
+    --mainTitlefont: Arial;
 }
 
 body {
-
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--textFont);
     font-size: 1rem;
     color: #303030;
 }
 
 h2 {
+    text-align: center;
+}
 
+.wildBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.Presentation {
+    max-width: 70%;
+    margin-right: 5%;
+}
+
+.logo {
+    margin: auto;
+}
+
+.contactPresentation {
+    text-align: center;
+}
+
+.line {
+    margin: 2rem;
+    height: 1px;
+    background: black;
+}
+
+input,
+textarea {
+    display: block;
+    height: 1.5rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: #DFE0DF;
+    background-color: var(--secondaryColor);
+}
+
+textarea {
+    height: 5rem;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 15%;
+
+/* a verifier avec perrine
     text-align: center;
 }
 
@@ -42,7 +93,7 @@ p {
 
 }
 
-.textpres {}
+*/
 
 footer {
     display: flex;
