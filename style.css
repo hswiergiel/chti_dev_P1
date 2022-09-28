@@ -3,9 +3,47 @@
     --secondaryColor: #DFE0DF;
     --textFontSize: 1rem;
     --titleFontSize: 1.5rem;
-    --textFont: Arial;
-    --titleFont: Arial;
-    --mainTitlefont: Arial;
+    --colorFont: #303030
+}
+
+nav {
+    background-color: var(--primaryColor);
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    color: var(--colorFont);
+}
+
+li {
+    display: inline;
+    margin: 2em;
+}
+
+.banner {
+    width: auto;
+    background-color: var(--secondaryColor);
+    margin-top: -1rem;
+}
+
+.bannerPresentation {
+    text-align: center;
+    width: clamp(50%, 33%, 50%);
+    font-size: var(--textFontSize);
+    color: var(--colorFont);
+    /* max-width: 50vh; */
+    margin: auto;
+}
+
+img {
+    width: 5%;
+}
+
+h1 {
+    color: var(--colorFont);
+    text-align: center;
+    font-size: var(--titleFontSize);
 }
 
 @media screen and (max-width: 320px) {}
