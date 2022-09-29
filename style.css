@@ -2,14 +2,14 @@
     --primaryColor: #FDBE00;
     --secondaryColor: #DFE0DF;
     --textFontSize: 1rem;
-    --titleFontSize: 2rem;
+    --titleFontSize: 2.2rem;
     --colorFont: #303030;
     --textFont: 'Raleway', sans-serif;
 }
 
 body {
     font-family: var(--textFont);
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #303030;
 }
 
@@ -69,7 +69,7 @@ nav ul a:hover {
     display: block;
     float: left;
     padding: 4%;
-    margin-left: 10%;
+    margin-left: 3%;
     padding-bottom: 0;
 }
 
@@ -116,7 +116,7 @@ div.banner h1 {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .Presentation {
@@ -256,7 +256,7 @@ em {
     margin-bottom: 7%;
     padding: 0;
     --reducing: calc(3/var(--numberofsquare));
-    --stagger-delay: 0ms;
+    --stagger-delay: 100ms;
 }
 
 .clear:after {
@@ -499,6 +499,10 @@ img.imagehexaHerve {
 
 /* version desktop */
 @media screen and (min-width:1200px) {
+    nav ul li {
+        font-size: 1.5rem;
+    }
+
     #grid {
         --numberofsquare: 4;
     }
