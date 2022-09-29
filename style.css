@@ -4,9 +4,63 @@
 
     --textFontSize: 1rem;
     --titleFontSize: 1.5rem;
-    --textFont: Arial;
-    --titleFont: Arial;
-    --mainTitlefont: Arial;
+    --colorFont: #303030
+}
+
+nav {
+    background-color: var(--primaryColor);
+    display: block;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    color: var(--colorFont);
+    padding: 1em;
+}
+
+li {
+    display: inline;
+    margin: 2em;
+}
+
+a {
+    color: var(--colorFont);
+    border-radius: 5px;
+    padding: 0.2em;
+}
+
+a:hover {
+    background-color: #DFE0DF;
+}
+
+.banner {
+    width: auto;
+    background-color: var(--secondaryColor);
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    padding: 1em;
+}
+
+.bannerPresentation {
+    text-align: center;
+    width: clamp(50%, 33%, 50%);
+    font-size: var(--textFontSize);
+    color: var(--colorFont);
+    /* max-width: 50vh; */
+    margin: auto;
+    /* height: 5em; */
+    padding: 1em;
+}
+
+img {
+    width: 10%;
+}
+
+h1 {
+    color: var(--colorFont);
+    text-align: center;
+    font-size: var(--titleFontSize);
 }
 
 body {

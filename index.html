@@ -14,28 +14,38 @@
     <header>
         <nav>
             <ul>
-                <li>Accueil</li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <img id="logo" />
+                <a href="#banner">
+                    <li>Accueil</li>
+                </a>
+                <a href="#hiveSection">
+                    <li>La promo</li>
+                </a>
+                <img id="logo" src="Logo_p1.png" alt="logo" />
 
+                <a href="#schoolPresentation">
+                    <li>La Wild</li>
+                </a>
+                <a href="#formPart">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <!-- <img id="logo" src="Logo_p1.png" alt="logo" /> -->
         </nav>
 
     </header>
 
-    <div class="banner">
-        <h1>
+    <div class="banner" id="banner">
+        <h1>Présentation de la promo JS</h1>
+        <p class="bannerPresentation">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut ultrices tortor. Morbi non semper lacus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer
+            ornare, arcu at interdum convallis.
 
-        </h1>
-        <p>
-            coucou!
         </p>
 
     </div>
 
-    <section class="hiveSection">
+    <section class="hiveSection" id="hiveSection">
         <h2>
 
         </h2>
@@ -94,80 +104,84 @@
         </div>
 
     </section>
-
-    <div class="line"></div>
-
-    <section class="schoolPresentation">
-        <h2>
-            La Wild
-        </h2>
-        <div class="wildBox">
-            <div class="logo">
-                <img class="wildLogo" src="wildLogo.png" alt="this is the wild code school logo">
-            </div>
-            <div class="Presentation">
-                <p> La Wild Code School propose des formations intensives aux métiers tech - Développement web, Data
-                    analyse,
-                    Cybersécurité, Product management - sur nos campus, à distance ou en entreprise.
-            </div>
-            </p>
-        </div>
-
+    <section class="schoolPresentation" id="schoolPresentation">
 
 
         <div class="line"></div>
 
-    </section>
+        <section class="schoolPresentation">
+            <h2>
+                La Wild
+            </h2>
+            <div class="wildBox">
+                <div class="logo">
+                    <img class="wildLogo" src="wildLogo.png" alt="this is the wild code school logo">
+                </div>
+                <div class="Presentation">
+                    <p> La Wild Code School propose des formations intensives aux métiers tech - Développement web, Data
+                        analyse,
+                        Cybersécurité, Product management - sur nos campus, à distance ou en entreprise.
+                </div>
+                </p>
+            </div>
+
+
+
+            <div class="line"></div>
+
+        </section>
+        <section class="formPart" id="formPart">
 
 
 
 
-    </section>
+        </section>
 
 
 
 
 
 
-    <section class="formPart">
-        <h2>
-            Contact
-        </h2>
-        <p class="contactPresentation">Vous souhaitez devenir un partenaire de la Wild et avoir un appui dans vos
-            recrutements? contactez-nous!</p>
+        <section class="formPart">
+            <h2>
+                Contact
+            </h2>
+            <p class="contactPresentation">Vous souhaitez devenir un partenaire de la Wild et avoir un appui dans
+                vos
+                recrutements? contactez-nous!</p>
 
-        <form class="formPresentation">
+            <form class="formPresentation">
 
-            <input type="name" id="input-name" placeholder="Nom / Prénom">
-            <input type="email" id="input-email" placeholder="Adresse Email">
-            <input type="text" id="company" placeholder="Société">
-            <textarea placeholder="Votre message"></textarea>
-            <button type="submit" id="submitButton" value="Submit">Envoyer</button>
-        </form>
-    </section>
+                <input type="name" id="input-name" placeholder="Nom / Prénom">
+                <input type="email" id="input-email" placeholder="Adresse Email">
+                <input type="text" id="company" placeholder="Société">
+                <textarea placeholder="Votre message"></textarea>
+                <button type="submit" id="submitButton" value="Submit">Envoyer</button>
+            </form>
+        </section>
 
-    <footer>
+        <footer>
 
-        <div class="bee">
+            <div class="bee">
 
-            <img src="/assets/abeille.png" alt="Abeille" width="200" style="transform:rotate(20deg)">
+                <img src="/assets/abeille.png" alt="Abeille" width="200" style="transform:rotate(20deg)">
 
-        </div>
+            </div>
 
-        <div class="adress">
+            <div class="adress">
 
-            <p>
+                <p>
 
-                Wild Code School Lille <br>
-                4 Av. des Saules <br>
-                Bâtiment le Doge <br>
-                59160 Lille
+                    Wild Code School Lille <br>
+                    4 Av. des Saules <br>
+                    Bâtiment le Doge <br>
+                    59160 Lille
 
-            </p>
-        </div>
+                </p>
+            </div>
 
 
-    </footer>
+        </footer>
 </body>
 
 </html>
