@@ -204,7 +204,7 @@ em {
 
     .logo {
         transform: scale(1);
-        margin-top: 10%;
+        margin-top: 0%;
     }
 
     .Presentation {
@@ -238,6 +238,9 @@ em {
 }
 
 /* CSS ruche  */
+.hiveSection {
+    margin-bottom: 15%;
+}
 
 .hiveSection h2 {
     font-family: "beePolice";
@@ -413,6 +416,7 @@ p.linkedin {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 p.cv {
     text-align: center;
     margin: 0;
@@ -444,6 +448,7 @@ img.imagehexa {
     position: absolute;
     margin: 0;
 }
+
 img.imagehexaLoic {
     width: 115%;
     position: absolute;
