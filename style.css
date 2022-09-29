@@ -18,6 +18,11 @@ h2 {
     font-size: var(--titleFontSize);
 }
 
+@font-face {
+    font-family: 'beePolice';
+    src: url('DK Abeille.otf');
+}
+
 /* CSS menu navigation et presentation */
 
 nav {
@@ -79,19 +84,30 @@ div.banner h1 {
 
 /* CSS presentation école et formulaire */
 
-.wildBox {
+.Presentation h2 {
+    margin-bottom: 6%;
+}
+
+.schoolPresentation {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15%;
 }
 
 .Presentation {
-    max-width: 70%;
+    max-width: 50%;
     margin-right: 5%;
+    background: var(--secondaryColor);
+    border-radius: 10px;
+    padding: 3%;
 }
 
 .logo {
     margin: auto;
+    transform: scale(2);
 }
 
 .contactPresentation {
@@ -100,7 +116,7 @@ div.banner h1 {
 }
 
 .line {
-    margin: 2rem;
+    margin: 6rem;
     height: 1px;
     background: black;
 }
@@ -124,7 +140,8 @@ textarea {
 button {
     display: block;
     margin: auto;
-    width: 15%;
+    width: 25%;
+    height: 2rem;
 }
 
 .formPart {
@@ -136,26 +153,75 @@ button {
 footer {
     display: flex;
     justify-content: space-around;
-    height: 100px;
+    align-items: center;
+    height: 20%;
     background-color: var(--primaryColor);
+    margin-bottom: -2rem;
 }
 
-
 .bee {
-
     opacity: 50%;
-
+    width: 200px;
+    transform: rotate(15deg);
 }
 
 .adress {
-
     text-align: end;
     font-family: var(--textFont);
+}
 
+em {
+    font-style: italic;
+}
 
+@media screen and (max-width:768px) {
+    .schoolPresentation {
+        align-items: center;
+    }
+
+    .logo {
+        transform: scale(1);
+        margin-top: 10%;
+    }
+
+    .Presentation {
+        margin-top: 10%;
+    }
+
+    .Presentation h2 {
+        display: none;
+    }
+
+    .line {
+        margin: 2rem;
+    }
+
+    .contactPresentation {
+        margin: 10% 10% 10% 10%;
+    }
+
+    .bee {
+        display: none;
+    }
+
+    .adress {
+        text-align: center;
+        margin: 5%;
+    }
+
+    .formPart {
+        margin-bottom: 10%;
+    }
 }
 
 /* CSS ruche  */
+
+.hiveSection h2 {
+    font-family: "beePolice";
+    font-size: 4rem;
+    margin: 5% auto 5%;
+    color: var(--primaryColor);
+}
 
 #grid {
     position: relative;
@@ -164,7 +230,7 @@ footer {
     margin-bottom: 7%;
     padding: 0;
     --reducing: calc(3/var(--numberofsquare));
-    --stagger-delay: 250ms;
+    --stagger-delay: 0ms;
 }
 
 .clear:after {
@@ -423,4 +489,7 @@ img.imagehexa {
         margin-left: 0.5%;
     }
 
+    .schoolPresentation {
+        flex-direction: column;
+    }
 }
