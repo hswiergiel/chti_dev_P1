@@ -36,6 +36,7 @@ h2 {
 
 .contactPresentation {
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .line {
@@ -66,35 +67,10 @@ button {
     width: 15%;
 }
 
-/* a verifier avec perrine
-    text-align: center;
-
-
-
-.lawild {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: #303030 solid;
-
-
-
+.formPart {
+    margin-bottom: 2%;
 }
 
-.logoentier {
-    padding: auto;
-    border: #303030 solid;
-
-}
-
-p {
-    max-width: 30vw;
-    text-align: left;
-
-}
-
-*/
 
 footer {
     display: flex;
@@ -102,9 +78,6 @@ footer {
     height: 100px;
     background-color: var(--primaryColor);
 }
-
-
-
 
 
 .bee {
@@ -121,12 +94,16 @@ footer {
 
 }
 
+/* CSS ruche  */
+
 #grid {
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+    margin-bottom: 7%;
     padding: 0;
     --reducing: calc(3/var(--numberofsquare));
+    --stagger-delay: 250ms;
 }
 
 .clear:after {
@@ -148,6 +125,8 @@ footer {
     transform: rotate(-60deg) skewY(30deg);
     overflow: hidden;
     visibility: hidden;
+    animation: cardEntrance 1300ms ease-out;
+    animation-fill-mode: backwards;
 }
 
 #grid li .hexagon {
@@ -172,14 +151,78 @@ footer {
 @keyframes cardEntrance {
     from {
         opacity: 0;
-        transform: scale(0.3);
     }
 
     to {
         opacity: 1;
-        transform: scale(1);
     }
 }
+
+#grid li .hexagon:nth-child(1) {
+    animation-delay: calc(1* var(--stagger-delay));
+}
+
+#grid li:nth-child(2) {
+    animation-delay: calc(2* var(--stagger-delay));
+}
+
+#grid li:nth-child(3) {
+    animation-delay: calc(3* var(--stagger-delay));
+}
+
+#grid li:nth-child(4) {
+    animation-delay: calc(4* var(--stagger-delay));
+}
+
+#grid li:nth-child(5) {
+    animation-delay: calc(5* var(--stagger-delay));
+}
+
+#grid li:nth-child(6) {
+    animation-delay: calc(6* var(--stagger-delay));
+}
+
+#grid li:nth-child(7) {
+    animation-delay: calc(7* var(--stagger-delay));
+}
+
+#grid li:nth-child(8) {
+    animation-delay: calc(8* var(--stagger-delay));
+}
+
+#grid li:nth-child(9) {
+    animation-delay: calc(9* var(--stagger-delay));
+}
+
+#grid li:nth-child(10) {
+    animation-delay: calc(10* var(--stagger-delay));
+}
+
+#grid li:nth-child(11) {
+    animation-delay: calc(11* var(--stagger-delay));
+}
+
+#grid li:nth-child(12) {
+    animation-delay: calc(12* var(--stagger-delay));
+}
+
+#grid li:nth-child(13) {
+    animation-delay: calc(13* var(--stagger-delay));
+}
+
+#grid li:nth-child(14) {
+    animation-delay: calc(14* var(--stagger-delay));
+}
+
+#grid li:nth-child(15) {
+    animation-delay: calc(15* var(--stagger-delay));
+}
+
+#grid li:nth-child(16) {
+    animation-delay: calc(16* var(--stagger-delay));
+}
+
+
 
 /* version desktop */
 @media screen and (min-width:1200px) {
