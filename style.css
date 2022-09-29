@@ -12,14 +12,14 @@ nav {
     display: block;
 }
 
-ul {
+nav ul {
     text-align: center;
     list-style-type: none;
     color: var(--colorFont);
     padding: 1em;
 }
 
-li {
+nav ul li {
     display: inline;
     margin: 2em;
 }
