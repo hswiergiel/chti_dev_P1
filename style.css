@@ -373,13 +373,13 @@ em {
 }
 
 /* CSS alveole */
-p.text {
+p.mail {
     text-align: center;
     margin: 0;
     padding: 0%;
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 20%;
     opacity: 1;
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -391,6 +391,7 @@ p.text {
 p.name {
     margin: 0;
     position: absolute;
+    text-align: center;
     top: 20%;
     left: 50%;
     -o-transform: translate(-50%, -50%);
@@ -400,12 +401,37 @@ p.name {
     transform: translate(-50%, -50%);
 }
 
-p.links {
+p.linkedin {
     text-align: center;
     margin: 0;
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 65%;
+    left: 20%;
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+p.cv {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+p.github {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 80%;
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -417,6 +443,38 @@ img.imagehexa {
     width: 100%;
     position: absolute;
     margin: 0;
+}
+img.imagehexaLoic {
+    width: 115%;
+    position: absolute;
+    margin: 0;
+}
+
+img.imagehexaNedim {
+    width: 110%;
+    position: absolute;
+    margin: 0;
+}
+
+img.imagehexaHerve {
+    width: 115%;
+    position: absolute;
+    margin: 0;
+}
+
+.hexagon:hover img.imagehexaLoic {
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.hexagon:hover img.imagehexaNedim {
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.hexagon:hover img.imagehexaHerve {
+    opacity: 0;
+    transition-delay: 0.3s;
 }
 
 .hexagon:hover img.imagehexa {
