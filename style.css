@@ -2,15 +2,16 @@
     --primaryColor: #FDBE00;
     --secondaryColor: #DFE0DF;
     --textFontSize: 1rem;
-    --titleFontSize: 2rem;
+    --titleFontSize: 2.2rem;
     --colorFont: #303030;
     --textFont: 'Raleway', sans-serif;
 }
 
 body {
     font-family: var(--textFont);
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #303030;
+    background: black;
 }
 
 h2 {
@@ -21,15 +22,19 @@ h2 {
 
 @font-face {
     font-family: 'beePolice';
-    src: url('DK Abeille.otf');
+    src: url('./assets/DK Abeille.otf');
 }
 
 /* CSS menu navigation et presentation */
 
 nav {
-    background-color: var(--primaryColor);
+    /* background-color: var(--primaryColor); */
     display: block;
     padding-bottom: 3%;
+    background-image: url("./assets/backgroundHeader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 nav ul {
@@ -69,7 +74,7 @@ nav ul a:hover {
     display: block;
     float: left;
     padding: 4%;
-    margin-left: 10%;
+    margin-left: 3%;
     padding-bottom: 0;
 }
 
@@ -82,7 +87,7 @@ nav ul a:hover {
 }
 
 img#logosite {
-    width: 10%;
+    width: 13%;
     /* margin: 4%; */
 }
 
@@ -116,7 +121,7 @@ div.banner h1 {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .Presentation {
@@ -132,6 +137,10 @@ div.banner h1 {
     transform: scale(2);
 }
 
+.formPart {
+    color: var(--secondaryColor);
+}
+
 .contactPresentation {
     text-align: center;
     margin-bottom: 2%;
@@ -140,7 +149,7 @@ div.banner h1 {
 .line {
     margin: 6rem;
     height: 1px;
-    background: black;
+    background: var(--secondaryColor);
 }
 
 input,
@@ -179,6 +188,7 @@ footer {
     height: 20%;
     background-color: var(--primaryColor);
     margin-bottom: -2rem;
+    padding: 2%;
 }
 
 .bee {
@@ -204,7 +214,7 @@ em {
 
     .logo {
         transform: scale(1);
-        margin-top: 10%;
+        margin-top: 0%;
     }
 
     .Presentation {
@@ -238,6 +248,9 @@ em {
 }
 
 /* CSS ruche  */
+.hiveSection {
+    margin-bottom: 15%;
+}
 
 .hiveSection h2 {
     font-family: "beePolice";
@@ -253,7 +266,7 @@ em {
     margin-bottom: 7%;
     padding: 0;
     --reducing: calc(3/var(--numberofsquare));
-    --stagger-delay: 0ms;
+    --stagger-delay: 100ms;
 }
 
 .clear:after {
@@ -458,10 +471,55 @@ img.imagehexaNedim {
     margin: 0;
 }
 
+img.imagehexaFlorian {
+    width: 115%;
+    position: absolute;
+    margin: 0;
+}
+
 img.imagehexaHerve {
     width: 115%;
     position: absolute;
     margin: 0;
+}
+
+img.imagehexaAsma {
+    width: 115%;
+    position: absolute;
+    margin: 0;
+}
+
+img.imagehexaPerrine {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+img.imagehexaAlexisF {
+    width: 192%;
+    position: absolute;
+    margin: 0;
+    left: -45%;
+}
+
+.hexagon:hover img.imagehexaAlexisF {
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.hexagon:hover img.imagehexaPerrine {
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.hexagon:hover img.imagehexaAsma {
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.hexagon:hover img.imagehexaFlorian {
+    opacity: 0;
+    transition-delay: 0.3s;
 }
 
 .hexagon:hover img.imagehexaLoic {
@@ -496,6 +554,10 @@ img.imagehexaHerve {
 
 /* version desktop */
 @media screen and (min-width:1200px) {
+    nav ul li {
+        font-size: 1.5rem;
+    }
+
     #grid {
         --numberofsquare: 4;
     }
