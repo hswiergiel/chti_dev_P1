@@ -11,6 +11,7 @@ body {
     font-family: var(--textFont);
     font-size: 1.6rem;
     color: #303030;
+    background: black;
 }
 
 h2 {
@@ -21,15 +22,19 @@ h2 {
 
 @font-face {
     font-family: 'beePolice';
-    src: url('DK Abeille.otf');
+    src: url('./assets/DK Abeille.otf');
 }
 
 /* CSS menu navigation et presentation */
 
 nav {
-    background-color: var(--primaryColor);
+    /* background-color: var(--primaryColor); */
     display: block;
     padding-bottom: 3%;
+    background-image: url("./assets/backgroundHeader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 nav ul {
@@ -82,7 +87,7 @@ nav ul a:hover {
 }
 
 img#logosite {
-    width: 10%;
+    width: 13%;
     /* margin: 4%; */
 }
 
@@ -132,6 +137,10 @@ div.banner h1 {
     transform: scale(2);
 }
 
+.formPart {
+    color: var(--secondaryColor);
+}
+
 .contactPresentation {
     text-align: center;
     margin-bottom: 2%;
@@ -140,7 +149,7 @@ div.banner h1 {
 .line {
     margin: 6rem;
     height: 1px;
-    background: black;
+    background: var(--secondaryColor);
 }
 
 input,
@@ -179,6 +188,7 @@ footer {
     height: 20%;
     background-color: var(--primaryColor);
     margin-bottom: -2rem;
+    padding: 2%;
 }
 
 .bee {
@@ -461,10 +471,55 @@ img.imagehexaNedim {
     margin: 0;
 }
 
+img.imagehexaFlorian {
+    width: 115%;
+    position: absolute;
+    margin: 0;
+}
+
 img.imagehexaHerve {
     width: 115%;
     position: absolute;
     margin: 0;
+}
+
+img.imagehexaAsma {
+    width: 115%;
+    position: absolute;
+    margin: 0;
+}
+
+img.imagehexaPerrine {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+img.imagehexaAlexisF {
+    width: 192%;
+    position: absolute;
+    margin: 0;
+    left: -45%;
+}
+
+.hexagon:hover img.imagehexaAlexisF {
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.hexagon:hover img.imagehexaPerrine {
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.hexagon:hover img.imagehexaAsma {
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.hexagon:hover img.imagehexaFlorian {
+    opacity: 0;
+    transition-delay: 0.3s;
 }
 
 .hexagon:hover img.imagehexaLoic {
