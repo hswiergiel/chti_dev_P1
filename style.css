@@ -364,6 +364,10 @@ p.mail {
     transform: translate(-50%, -50%);
 }
 
+.gmailLogo {
+    width: 20%;
+    }
+    
 p.name {
     margin: 0;
     position: absolute;
@@ -382,13 +386,17 @@ p.linkedin {
     margin: 0;
     position: absolute;
     top: 65%;
-    left: 20%;
+    left: 25%;
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+.linkedinLogo {
+    width: 50%;
+    }
 
 p.cv {
     text-align: center;
@@ -403,18 +411,25 @@ p.cv {
     transform: translate(-50%, -50%);
 }
 
+.cvLogo {
+    width: 100%;
+    }
+
 p.github {
     text-align: center;
     margin: 0;
     position: absolute;
     top: 45%;
-    left: 80%;
+    left: 75%;
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.gitHubLogo {
+    width: 140%;
+    }
 
 img.imagehexa {
     width: 100%;
