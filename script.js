@@ -31,3 +31,18 @@ fisherYatesShuffle(alveolusArray);
 document.querySelector("#shuffleButton").addEventListener("click", function () {
     fisherYatesShuffle(alveolusArray);
 });
+
+// style du formulaire
+let submitionMsg = document.querySelector(".submitionText");
+
+document.querySelector("#submitButton").addEventListener('click', function (event) {
+    event.preventDefault();
+    submitionMsg.classList.toggle("hidden");
+    document.querySelector(".formPresentation").reset();
+});
+
+document.querySelector("#refreshButton").addEventListener('click', function (event) {
+    event.preventDefault();
+    submitionMsg.classList.add("hidden");
+    document.querySelector(".formPresentation").reset();
+});
