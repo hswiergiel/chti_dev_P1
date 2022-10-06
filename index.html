@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav>
             <ul>
                 <div class="bannerLi1"> <a href="#banner">
@@ -34,10 +34,24 @@
                 </div>
 
             </ul>
-            <!-- <img id="logo" src="Logo_p1.png" alt="logo" /> -->
+        </nav>
+    </header> -->
+
+    <header>
+        <nav>
+            <ul>
+                <div class="menulist">
+                    <div class="closemenu menubutton hidden"> X </div>
+                    <div class="openmenu menubutton hidden"> ||| </div>
+                    <li class="menuitem"><a href="#banner"></a>Accueil</a></li>
+                    <li class="menuitem"><a href="#hiveSection"></a>La Promo</a></li>
+                    <img id="logosite" src="./assets/Logo_p1.png" alt="logo" />
+                    <li class="menuitem"><a href="#schoolPresentation"></a>La Wild</a></li>
+                    <li class="menuitem"><a href="#formPart"></a>Contact</a></li>
+                </div>
+            </ul>
         </nav>
     </header>
-
     <div class="banner" id="banner">
         <h1>Bienvenue sur la ruche !</h1>
         <p class="bannerPresentation">
@@ -351,12 +365,9 @@
             <input type="email" id="input-email" placeholder="Adresse Email">
             <input type="text" id="company" placeholder="Société">
             <textarea placeholder="Votre message"></textarea>
-            <div class="buttonAreas">
-                <button type="submit" id="submitButton" value="Submit">Envoyer</button>
-                <button type="submit" id="refreshButton" value="Submit">Rafraichir</button>
-            </div>
+            <button type="submit" id="submitButton" value="Submit">Envoyer</button>
         </form>
-        <p class="submitionText hidden">
+        <p class="submitionText hiddenmsg">
             Merci pour votre envoi. Nous reprendrons contact avec vous très prochainement.
         </p>
     </section>

@@ -26,13 +26,18 @@ h1,
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
 @font-face {
     font-family: 'beePolice';
     src: url('./assets/DK Abeille.otf');
 }
 
-/* CSS menu navigation et presentation */
+/* CSS menu navigation */
 
+/* 
 nav {
     display: block;
     padding-bottom: 3%;
@@ -67,14 +72,6 @@ nav ul a:hover {
     background-color: #DFE0DF;
 }
 
-.banner {
-    width: auto;
-    background-color: var(--secondaryColor);
-    margin-top: -1rem;
-    margin-bottom: 1rem;
-    padding: 1em;
-}
-
 .bannerLi1 {
     display: block;
     float: left;
@@ -88,21 +85,74 @@ nav ul a:hover {
     float: right;
     padding: 4%;
     padding-bottom: 0;
-    /* margin-right: 10%; */
 }
 
 img#logosite {
     width: 13%;
-    /* margin: 4%; */
+}
+ */
+
+
+nav {
+    padding-bottom: 3%;
+    background-image: url("./assets/backgroundHeader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    color: var(--colorFont);
+    padding: 1em;
+
+}
+
+.menulist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav ul li {
+    color: var(--colorFont);
+    border-radius: 5px;
+    padding: 0.2em;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #DFE0DF;
+}
+
+img#logosite {
+    width: 13%;
+}
+
+.menubutton {
+    display: none;
+}
+
+
+/* CSS banniere */
+.banner {
+    width: auto;
+    background-color: var(--secondaryColor);
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    padding: 1em;
 }
 
 .bannerPresentation {
     text-align: center;
     width: clamp(50%, 33%, 50%);
     color: var(--colorFont);
-    /* max-width: 50vh; */
     margin: auto;
-    /* height: 5em; */
     padding: 1em;
 }
 
@@ -110,8 +160,7 @@ div.banner h1 {
     color: var(--colorFont);
     text-align: center;
     font-size: var(--titleFontSize);
-    /* border: 1px solid black;
-    width: auto; */
+
 }
 
 /* CSS presentation école et formulaire */
@@ -144,7 +193,14 @@ div.banner h1 {
 
 .formPart {
     color: var(--secondaryColor);
+    border: 1px solid var(--secondaryColor);
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
 
+.formPart h2 {
+    margin-top: 1.5%;
 }
 
 .contactPresentation {
@@ -180,8 +236,7 @@ input:focus {
     background-color: #f8db86;
 }
 
-#submitButton,
-#refreshButton {
+#submitButton {
     display: block;
     width: 25%;
     height: 2rem;
@@ -192,10 +247,11 @@ input:focus {
     border: 1px solid #ffdf7e;
     box-shadow: 0px 7px 0px #6c5100;
     transition: all 0.1s;
+    margin: auto;
+    margin-bottom: 6%;
 }
 
-#submitButton:active,
-#refreshButton:active {
+#submitButton:active {
     box-shadow: 0px 2px 0px #6c5100;
     position: relative;
     top: 5px;
@@ -209,16 +265,11 @@ input:focus {
     margin-top: 2%;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 4%;
 }
 
-.hidden {
-    color: black;
-}
-
-.buttonAreas {
-    margin-top: 3%;
-    display: flex;
-    justify-content: space-evenly;
+.hiddenmsg {
+    display: none;
 }
 
 /* CSS footer */
@@ -471,7 +522,7 @@ img.imagehexaAlexisF {
     left: -45%;
 }
 
-.hexagon:hover img.imagehexaAlexisF {
+/* .hexagon:hover img.imagehexaAlexisF {
     opacity: 0;
     transition-delay: 0.3s;
 }
@@ -509,23 +560,23 @@ img.imagehexaAlexisF {
 .hexagon:hover img.imagehexa {
     opacity: 0;
     transition-delay: 0.3s;
-}
+} */
 
 .box {
     opacity: 0;
 }
 
-.hexagon:hover .box {
+/* .hexagon:hover .box {
     opacity: 1;
     transition-delay: 0.3s;
-}
+} */
 
 
 /* version desktop */
 @media screen and (min-width:1200px) {
-    nav ul li {
+    /* nav ul li {
         font-size: 1.5rem;
-    }
+    } */
 
     #grid {
         --numberofsquare: 4;
@@ -611,22 +662,14 @@ img.imagehexaAlexisF {
         margin-left: 0.5%;
     }
 
-    nav ul li {
-        display: block;
-        flex-direction: column;
-
-    }
-
-    .bannerLi1 {
+    /* .bannerLi1 {
         display: block;
         position: absolute;
         right: 0;
         padding: 0;
         margin-right: 0.5%;
         line-height: 0.5%;
-        /* border: 1px solid black; */
     }
-
 
     .bannerLi2 {
         display: block;
@@ -636,22 +679,45 @@ img.imagehexaAlexisF {
         margin-right: 0.5%;
         margin-top: 5rem;
         line-height: 0.5%;
-        /* border: 1px solid black; */
+    } */
 
-    }
-
-    .bannerLi1 li,
+    /* .bannerLi1 li,
     .bannerLi2 li {
         margin-bottom: 7%;
-    }
+    } */
 
-    nav {
+    /* nav {
         background-color: var(--primaryColor);
         display: block;
         padding-bottom: 45%;
         margin-bottom: 3em;
+    } 
 
+    img#logosite {
+        width: 50%;
+        margin: 0;
+        display: block;
+        float: left;
+    }*/
+
+    img#logosite {
+        display: none;
     }
+
+    nav {
+        padding-bottom: 20%;
+    }
+
+    .menulist {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .menubutton {
+        display: block;
+        font-size: 3rem;
+    }
+
 
     .banner {
         width: auto;
@@ -660,14 +726,6 @@ img.imagehexaAlexisF {
         margin-bottom: 1rem;
         padding: 1em;
         font-size: 0.8em;
-    }
-
-    img#logosite {
-        width: 50%;
-        margin: 0;
-        display: block;
-        float: left;
-
     }
 
     .bannerPresentation {
@@ -712,6 +770,7 @@ img.imagehexaAlexisF {
 
     .formPart {
         margin-bottom: 10%;
+
     }
 
     .submitionText {
