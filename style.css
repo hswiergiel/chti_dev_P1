@@ -37,7 +37,7 @@ h1,
 
 /* CSS menu navigation */
 
-/* 
+/*
 nav {
     display: block;
     padding-bottom: 3%;
@@ -691,7 +691,7 @@ img.imagehexaAlexisF {
         display: block;
         padding-bottom: 45%;
         margin-bottom: 3em;
-    } 
+    }
 
     img#logosite {
         width: 50%;
@@ -699,6 +699,14 @@ img.imagehexaAlexisF {
         display: block;
         float: left;
     }*/
+    #iconOpen,
+    #iconClose {
+        /* border: 2px solid black; */
+        margin-left: 80%;
+        margin-top: 10%;
+        width: 12%;
+
+    }
 
     img#logosite {
         display: none;
@@ -715,7 +723,7 @@ img.imagehexaAlexisF {
 
     .menubutton {
         display: block;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
 
