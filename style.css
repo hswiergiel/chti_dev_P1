@@ -93,6 +93,7 @@ img#logosite {
  */
 
 
+
 nav {
     padding-bottom: 3%;
     background-image: url("./assets/backgroundHeader.jpg");
@@ -112,6 +113,8 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /* border: 1px solid black; */
+
 }
 
 nav ul li {
@@ -124,6 +127,13 @@ nav ul li {
     border-radius: 5px;
     padding: 0.2em;
     text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    /* border: 1px solid black; */
 }
 
 nav ul li:hover {
@@ -639,6 +649,19 @@ img.imagehexaAlexisF {
 
 /* version mobile */
 @media screen and (max-width:768px) {
+
+    #arrow {
+        position: fixed;
+        left: 89%;
+        top: 80%;
+
+    }
+
+    #arrowImg {
+        width: 50%;
+        rotate: -90deg;
+    }
+
     body {
         font-size: 1.3rem;
     }
@@ -706,6 +729,10 @@ img.imagehexaAlexisF {
         margin-top: 10%;
         width: 12%;
 
+    }
+
+    .menuitem {
+        font-size: 1rem;
     }
 
     img#logosite {
