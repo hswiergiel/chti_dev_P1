@@ -655,6 +655,9 @@ img.imagehexaAlexisF {
 
 /* version mobile */
 @media screen and (max-width:768px) {
+    .box {
+        font-size: 1rem;
+    }
 
     #arrow {
         padding: 10%;
@@ -741,7 +744,7 @@ img.imagehexaAlexisF {
     }
 
     .menuitem {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     img#logosite {
