@@ -76,14 +76,14 @@ for (let n = 1; n <= 16; n++) {
     });
 };
 
-// for (let n = 1; n <= 16; n++) {
-//     document.querySelector(`#grid li:nth-child(${n})`).addEventListener('mouseenter', function () {
-//         document.querySelector(`#grid li:nth-child(${n})`).style.bottom = "5px";
-//     });
-//     document.querySelector(`#grid li:nth-child(${n})`).addEventListener('mouseleave', function () {
-//         document.querySelector(`#grid li:nth-child(${n})`).style.bottom = "0";
-//     })
-// }
+for (let n = 1; n <= 16; n++) {
+    document.querySelector(`#grid li:nth-child(${n})`).addEventListener('mouseenter', function () {
+        document.querySelector(`#grid li:nth-child(${n})`).style.bottom = "5px";
+    });
+    document.querySelector(`#grid li:nth-child(${n})`).addEventListener('mouseleave', function () {
+        document.querySelector(`#grid li:nth-child(${n})`).style.bottom = "0";
+    })
+}
 
 // menu burger
 
